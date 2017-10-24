@@ -1,5 +1,5 @@
 # Spartan Design
-This is a website made by group 6 contributing for class use in SE131. Spartan Design is a web service built with Ruby on Rails in HTML and Javascript.
+This is a website made by group 6 contributing for class use in SE131. Spartan Design is a web service built with Ruby on Rails in HTML and CSS.
 
 # Features
 * Designer recognition and support
