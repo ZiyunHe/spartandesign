@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webforum</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="navbar-fixed">
+      <nav class="blue darken-4">
+        <div class="nav-wrapper">
+          <div class="container">
+
+            <%= link_to "Forum", root_path, class:"brand-logo" %>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Home</a></li>
+                <li><a href="badges.html">Cotacts</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  	<div class="container">
+      <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+  		<%= yield %>
+  	</div>
+
+    
+  </body>
+</html>

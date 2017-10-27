@@ -9,4 +9,3 @@ This is a website made by group 6 contributing for class use in SE131. Spartan D
 # Pre-Requisites
 * Ruby >2.4.1-2
 * Rails >5.1.4
-
