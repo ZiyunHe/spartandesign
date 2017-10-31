@@ -17,7 +17,8 @@
 
             <%= link_to "Forum", root_path, class:"brand-logo" %>
               <ul class="right hide-on-med-and-down">
-                <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+                <li><%= link_to "Sign in", new_user_session_path %></li>
+                <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
               </ul>
           </div>
         </div>
@@ -25,7 +26,6 @@
     </div>
 
   	<div class="container">
-      <p class="notice"><%= notice %></p>
   		<%= yield %>
   	</div>
 
