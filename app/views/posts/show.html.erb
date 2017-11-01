@@ -1,14 +1,12 @@
-<!--<p id="notice"><%= notice %></p>-->
+<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Headline:</strong>
-  <%= @post.headline %>
-</p>
+<h4><%= @post.headline %></h4>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+<div class="divider"></div>
+
+<h5 class="flow-text" style="word-wrap:break-word;"><%= @post.content %></h5>
+
+</br></br></br></br></br></br>
 
 <% if @post.user == current_user %>
 <%= link_to 'Edit', edit_post_path(@post) %> |
