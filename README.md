@@ -1,32 +1,24 @@
-# Spartan Design
-This is a website made by group 6 contributing for class use in SE131. Spartan Design is a web service built with Ruby on Rails.
+# README
 
-# Features
-* Designer recognition and support
-* Community involvement with school clothing
-* Accessible user interfaces
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-# Pre-Requisites
-* Ruby >2.4.1-2
-* Rails >5.1.4
+Things you may want to cover:
 
-# How to run Spartan design on your local computer, and fix bugs
-- Install Ruby and Rails
-- Download Master branch
-- In Terminal, direct into downloaded folder
-- run "rake db:migrate"
-- run "rails s"
+* Ruby version
 
-Then you will encounter error says "require_tree argument must be a directory” 
-That's because git ignores empty folder when upload
+* System dependencies
 
-To fix this:
-- go into downloaded spartandesign-master folder
-- Go to the directory app/assets/javascripts/
-- create folder called "channels"
-- Then go to directory app/assets/javascripts/channels
-- Create empty file within that folder, called ".keep"
-the address of the new file will be "app/assets/javascripts/channels/.keep"
+* Configuration
 
-Now run "rails s",
-the website should be working fine. 
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
