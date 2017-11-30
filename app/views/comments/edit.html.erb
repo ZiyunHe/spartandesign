@@ -1,0 +1,7 @@
+<%= form_for([@post, @comment]) do |f| %>
+	<%= f.text_area :content %>
+	<%= f.submit %>
+	<span class="picture">
+    	<%= f.file_field :picture %>
+  	</span>
+<% end %>

@@ -1,0 +1,27 @@
+<h3> This post has <%= pluralize(@comments.count, "Comment") %> </h3>
+
+<% @comments.each do |comment| %>
+	<p><b><%= comment.user.email %></b></p>
+	<p><%= comment.content %></p>
+	<p><%= image_tag comment.picture.url if comment.picture? %></p>
+	<%= link_to like_post_comment_path(comment.post, comment), method: :put do %>
+		<button type="button" >
+			like<%=comment.get_upvotes.size %>
+		</button>
+	<% end %>
+	<%= link_to unlike_post_comment_path(comment.post, comment), method: :put do %>
+		<button type="button" >
+			unlike<%=comment.get_downvotes.size %>
+		</button>
+	<% end %>
+	<br>
+	<% if current_user == comment.user %>
+		<%= link_to "Delete comment", [comment.post, comment], method: :delete %>
+		<%= link_to "Edit comment", edit_post_comment_path(comment.post, comment) %>
+	<% end %>
+<% end %>
+<br>
+
+<% if user_signed_in? %>
+	<%= render 'comments/form' %>
+<% end %>
